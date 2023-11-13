@@ -1,0 +1,25 @@
+-in
+	-file
+		-s 'PROA.pdb LIG.pdb'
+		-extra_res_fa ./LIG.params 
+-packing
+	-ex1
+	-ex2
+	-no_optH false
+	-flip_HNQ true
+	-ignore_ligand_chi true
+
+-parser
+	-protocol test.xml
+
+
+-overwrite
+
+
+-mistakes
+	-restore_pre_talaris_2013_behavior true 
+
+-out
+	-nstruct 600
+-qsar
+	-grid_dir ./grid
